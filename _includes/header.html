@@ -1,0 +1,22 @@
+<header>
+    <nav>
+        <div class="nav-left">
+            <a href="{{ '/' | relative_url }}" class="home-link">
+                <i class="fas fa-book-open"></i>
+            </a>
+        </div>
+        <div class="nav-right">
+            <a href="https://currenjin.github.io/resume" target="_blank">About</a>
+        </div>
+    </nav>
+
+    {% unless page.layout == 'post' %}
+    <div class="title-container">
+        <h1 class="site-title">{{ site.title }}</h1>
+        <p class="subtitle">{{ site.description }}</p>
+        {% if page.url == '/' %}
+        <p class="description">by currenjin</p>
+        {% endif %}
+    </div>
+    {% endunless %}
+</header>

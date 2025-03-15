@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=Sorts+Mill+Goudy:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="library-background">
+    <div class="bookshelf-top"></div>
+
+    <div class="main-container">
+        {% include header.html %}
+
+        <main>
+            {{ content }}
+        </main>
+
+        {% include footer.html %}
+    </div>
+
+    <div class="bookshelf-bottom"></div>
+</div>
+</body>
+</html>

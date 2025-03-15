@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<div class="library-catalog">
+    <div class="catalog-header">
+        <h2><i class="fas fa-book"></i> 최근 추가된 글</h2>
+        <div class="catalog-controls">
+            <a href="#" class="catalog-control">분류별</a>
+            <a href="#" class="catalog-control">날짜별</a>
+        </div>
+    </div>
+</div>
+
+<div class="books-container">
+    {% for post in site.posts %}
+    <article class="book">
+        <div class="book-spine" style="background-color: {{ site.category_colors[post.category] }};">
+            <div class="spine-title">[{{ post.category }}]</div>
+        </div>
+        <div class="book-content">
+            <h2 class="book-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+            <p class="book-excerpt">
+                {{ post.excerpt | strip_html | truncatewords: 50 }}
+            </p>
+            <div class="book-meta">
+                <span class="book-date"><i class="fas fa-calendar"></i> {{ post.date | date: "%Y년 %m월 %d일" }}</span>
+                <span class="book-pages"><i class="fas fa-file-alt"></i> {{ post.pages | default: "?" }} 페이지</span>
+                <span class="book-time"><i class="fas fa-clock"></i> {{ post.reading_time | default: "15분" }} 소요</span>
+            </div>
+        </div>
+    </article>
+    {% endfor %}
+</div>
