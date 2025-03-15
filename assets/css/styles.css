@@ -24,13 +24,19 @@
 }
 
 body {
-    font-family: '궁서', 'Gungsuh', 'Gungsuh Che', serif;
-    color: var(--primary-color);
+    font-family: 'Noto Serif KR', serif;
+    font-size: 18px;
+    line-height: 1.85;
+    letter-spacing: 0.04em;
+    color: #333;
     background-color: var(--background-color);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    letter-spacing: 0.06em;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 /* 페이지 배경 질감 */
@@ -45,6 +51,12 @@ body::before {
     opacity: 0.3;
     z-index: -1;
     pointer-events: none;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* 컨테이너 */
