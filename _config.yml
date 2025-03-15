@@ -1,7 +1,7 @@
 title: Currenjin Library
 description: 사유와 고찰, 그리고 기록
-baseurl: ""
-url: "https://currenjin.github.io/alexsandria"
+baseurl: "/library"
+url: "https://currenjin.github.io"
 
 author: currenjin
 email: hyun0524e@naver.com
