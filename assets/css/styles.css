@@ -616,3 +616,28 @@ a.icon-link {
     gap: 0.5rem;
     font-size: 0.9rem;
 }
+
+ul, ol {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul ul, ol ol {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+/* 기존 스타일 유지 + 가독성 개선 */
+body {
+    font-size: 20px; /* 어르신을 위해 폰트 크기 약간 증가 */
+    line-height: 1.9; /* 행간 약간 늘림 */
+}
+
+.book-content p {
+    font-size: 1.1rem; /* 본문 폰트 크기 살짝 증가 */
+    line-height: 1.9; /* 본문 행간 늘림 */
+}
+
+.book-content h2 {
+    font-size: 1.9rem; /* 제목 폰트 크기 약간 증가 */
+}

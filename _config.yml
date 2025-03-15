@@ -9,6 +9,9 @@ github_username: currenjin
 
 # 마크다운 설정
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 
 # 포스트 URL 형식
 permalink: /:categories/:title/
